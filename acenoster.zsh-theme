@@ -8,7 +8,7 @@
   ZSH_THEME_ACENOSTER_ALWAYS_SHOW_USER=1
   ZSH_THEME_ACENOSTER_ALWAYS_SHOW_HOST=1
   ZSH_THEME_ACENOSTER_SHOW_HG_PROMPT=0
-  ZSH_THEME_ACENOSTER_SHOW_BATTERY=1
+  ZSH_THEME_ACENOSTER_SHOW_BATTERY=0
   ZSH_THEME_ACENOSTER_SHOW_TIMER=1
   ZSH_THEME_ACENOSTER_SHOW_BACK_JOBS=1
   ZSH_THEME_ACENOSTER_SHOW_LAST_RETURN=1
@@ -453,7 +453,7 @@ acenoster_pre_prompt () {
 }
 
 # Main prompt
-PRE_LPROMPT="╭─\$(acenoster_prompt_user)\$(acenoster_prompt_host)\$(acenoster_aws_prompt_info)\$(acenoster_prompt_dir)\$(acenoster_git_super_status)\$(acenoster_prompt_hg)\$(acenoster_virtualenv_prompt_info)"
+PRE_LPROMPT="╭─\$(acenoster_prompt_user)\$(acenoster_prompt_host)\$(acenoster_prompt_dir)\$(acenoster_git_super_status)\$(acenoster_prompt_hg)\$(acenoster_virtualenv_prompt_info)"
 PRE_RPROMPT="\$(acenoster_prompt_battery)\$(acenoster_prompt_timer)\$(acenoster_emoji-clock)\$(acenoster_prompt_clock)\$(acenoster_prompt_calendar)"
 PROMPT="╰─\$(acenoster_prompt_back_task)\$(acenoster_prompt_exit_code)\$(acenoster_prompt_vi_mode)"
 RPROMPT=""
